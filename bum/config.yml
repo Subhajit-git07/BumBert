@@ -1,0 +1,86 @@
+
+---
+thresholdNew: 0.75
+thresholdRecheck: 0.80
+thresholdInTangible: 0.90
+scoaThreshold : 0.40
+
+# #Demo
+# CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=ukitaxdemoa032;AccountKey=XGh/2AfPFtlk3sDegXDILN31X3IRNqmW+0ZS7vLlr4l9J+XTXnilXr5FF14PYoobsmU/Bbw2YOGc+AStD77w8w==;EndpointSuffix=core.windows.net"
+# CONTAINER: "streamlit-uki-demo"
+# storageAccountKeyDemo: "XGh/2AfPFtlk3sDegXDILN31X3IRNqmW+0ZS7vLlr4l9J+XTXnilXr5FF14PYoobsmU/Bbw2YOGc+AStD77w8w=="
+# storageAccountNameDemo: "ukitaxdemoa032"
+
+##Dev
+# CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=stbumblebeedevwe;AccountKey=edT3YLU8djbMc4rtvvB+QeSO5FxcrWcpCBjxpVeQUgLX/lP2+i2QpRK7kNxXLyTXwuGKpTOTfoac+AStWI5IHw==;EndpointSuffix=core.windows.net"
+# CONTAINER: "fstb-reconciliation"
+# storageAccountKeyDemo: "edT3YLU8djbMc4rtvvB+QeSO5FxcrWcpCBjxpVeQUgLX/lP2+i2QpRK7kNxXLyTXwuGKpTOTfoac+AStWI5IHw=="
+# storageAccountNameDemo: "stbumblebeedevwe"
+
+# ##QA
+# CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=uksqafc010sta01;AccountKey=Zeb38oxtNk2QIOXkX8Oq29eJBznAaV3eFYjMUp6NPkTszQSaiZr0vt/Dgrswru5fCzxLt3HqtmdE+AStwuuIQA==;EndpointSuffix=core.windows.net"
+# CONTAINER: "uk-tax-reconciliation"
+# storageAccountKeyDemo: "Zeb38oxtNk2QIOXkX8Oq29eJBznAaV3eFYjMUp6NPkTszQSaiZr0vt/Dgrswru5fCzxLt3HqtmdE+AStwuuIQA=="
+# storageAccountNameDemo: "uksqafc010sta01"
+
+
+# #UAT
+# CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=uksuafc010sta01;AccountKey=c63p7YkyPtTpsu6G1wcW6FYq0+zYtxKaJe0D0qqZZVP0MMgXumpGubVwBGPF3RKdWUwG9TYzrRzu+AStsaquVg==;EndpointSuffix=core.windows.net"
+# CONTAINER: "uk-tax-reconciliation"
+# storageAccountKeyDemo: "c63p7YkyPtTpsu6G1wcW6FYq0+zYtxKaJe0D0qqZZVP0MMgXumpGubVwBGPF3RKdWUwG9TYzrRzu+AStsaquVg=="
+# storageAccountNameDemo: "uksuafc010sta01"
+
+#Prod
+
+CONNECTION_STRING: "DefaultEndpointsProtocol=https;AccountName=ukspafc010sta01;AccountKey=4TmetI3mIfk9IEOFqFxwnSmqJrLtdcjY4sHv89ZQc849aXhJTGSKYxLBS5p4edReIi/7QSEjbgTb+AStBSBjDg==;EndpointSuffix=core.windows.net"
+CONTAINER: "uki-tax-reconciliation"
+storageAccountKeyDemo: "4TmetI3mIfk9IEOFqFxwnSmqJrLtdcjY4sHv89ZQc849aXhJTGSKYxLBS5p4edReIi/7QSEjbgTb+AStBSBjDg=="
+storageAccountNameDemo: "ukspafc010sta01"
+
+
+
+# ##UAT Beehive Broker QA
+# CONTAINER_BBOX : "uki-blackbox"
+# blackBoxUrlStart: "https://prod-03.uksouth.logic.azure.com/workflows/b9c8dc0d978a413e8dc78a1c87a33303/triggers/manual/paths/invoke/project/"
+# blackBoxUrlEnd: "?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=M4E8qwF0RlYjwJdQ4Oad93FZIdPaN4QhHucChZHK_KE"
+
+
+
+# #UAT Beehive Broker URL
+
+# CONTAINER_BBOX : "uki-blackbox"
+# blackBoxUrlStart : "https://uat.p.api.ey.com/afc-uat/api/v1/project/"
+# blackBoxUrlEnd: "?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=55QNnZed96vrk2wdn7z529DfT-V1hpJ_IKDQyZIytyg"
+
+#PROD Beehive Broker URL
+
+CONTAINER_BBOX : "uki-blackbox"
+blackBoxUrlStart : "https://prod.p.api.ey.com/afc-prod/api/v1/project/"
+blackBoxUrlEnd: "?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=nLU3etjUpRywuwVm8-zmBDA4WuVNhIHFmxW6seBWLu8"
+
+
+# #form Recognizer UAT
+# formRecognizerKey: "fb4f0d3a367e4ab48f22242eb94f2120"
+# formRecognizerUrl: "https://uksuafc010cgs01.cognitiveservices.azure.com/"
+
+# ##form Recognizer QA
+# formRecognizerKey: "0737d66e0a0f4c718efcf1fd99a2b9dd"
+# formRecognizerUrl: "https://uksqafc010cgs01.cognitiveservices.azure.com/"
+
+#form Recognizer PROD
+
+formRecognizerKey: "c93bdf8f16504e729aa22ed79dfb0445"
+formRecognizerUrl: "https://ukspafc010cgs02.cognitiveservices.azure.com/"
+
+##GTPW login credential
+
+gtpwMicrosoftLogin: "https://login.microsoftonline.com/5b973f99-77df-4beb-b27d-aa0c70b8482c/oauth2/v2.0/token"
+clientId: "a23f7c37-cd9a-4c00-b1a8-cd1e756d7f69"
+clientSecret: "Ei98Q~BkhcgMO34SfCn4npDucHk0cJhfWSl9.arH"
+scope: "https://graph.microsoft.com/.default"
+cookies: "fpc=AmTkVnte7TRLoSwZQG-4fPX1qRqnAwAAAPFCitsOAAAA; stsservicecookie=estsfd; x-ms-gateway-slice=estsfd"
+subscriptionId: "444ee6eb-22a3-467f-9918-46891d7b2d7c"
+
+##GTP login
+gtpwUser: 'GTPW-User'
+gtpwPassword: "g23JNG30s9q4pqoijafa62n4soEwa6aweh3Saw3S0"

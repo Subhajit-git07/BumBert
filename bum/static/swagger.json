@@ -1,0 +1,92 @@
+{
+    "swagger": "2.0",
+    "basePath": "/",
+
+    "paths": {
+
+        "/GTPW/FSTB": {
+            "post":
+            {
+                "parameters": [{
+        "in": "body",
+        "name": "request_json",
+        "description": "Request Body",
+                    "paramType": "body",
+        "required": true,
+                    "schema": {
+                        "type": "object",
+
+                        "properties" : {}
+
+                    }
+      }
+    ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "fstbrecon",
+                "tags": [
+                    "default"
+                ]
+            }
+        },
+
+        "/GTPW/mapping": {
+            "post":
+            {
+                "parameters": [{
+        "in": "body",
+        "name": "request_json",
+        "description": "Request Body",
+                    "paramType": "body",
+        "required": true,
+                    "schema": {
+                        "type": "object",
+
+                        "properties" : {}
+
+                    }
+      }
+    ],
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    }
+                },
+                "operationId": "fstbrecon",
+                "tags": [
+                    "default"
+                ]
+            }
+        }
+
+
+    },
+    "info": {
+        "title": "API",
+        "version": "1.0"
+    },
+    "produces": [
+        "application/json"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "tags": [
+        {
+            "name": "default",
+            "description": "Default namespace"
+        }
+    ],
+    "responses": {
+        "ParseError": {
+            "description": "When a mask can't be parsed"
+        },
+        "MaskError": {
+            "description": "When any error occurs on mask"
+        }
+    }
+}
+
